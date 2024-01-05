@@ -3,9 +3,20 @@
 <head>
     <title>Matthew LiDonni's Portfolio</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 <body>
+    <div id="header"></div>
+    
     <h1>Welcome!</h1>
     <marquee><h3>www.matthewlidonni.com is currently under construction</h3></marquee>
+
+    <div id="footer"></div>
 </body>
 </html>

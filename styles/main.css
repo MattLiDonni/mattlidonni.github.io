@@ -1,0 +1,60 @@
+* {
+    background-color: #EBECFB;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.purple {
+    color: #5E559A;
+}
+
+.pale-blue {
+    color: #A3B5E9;
+}
+
+.background-white {
+    color: #EBECFB;
+}
+
+.proj-card {
+    border: solid 1px gray;
+    border-radius: 16px;
+
+}
+
+
+/* Phones */
+@media (min-width: 0px) and (max-width: 767px) {
+    
+    /* For debugging styles */
+    .debug-phone { display: inline; }
+    .debug-tablet, .debug-desktop { display: none; }
+    /* For debugging styles */
+
+}
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) { 
+    /* For debugging styles */
+    .debug-tablet { display: inline; }
+    .debug-phone, .debug-desktop { display: none; }
+    /* For debugging styles */
+
+}
+
+
+/* Desktops */
+@media (min-width: 992px) { 
+/* For debugging styles */
+.debug-desktop { display: inline; }
+.debug-phone, .debug-tablet { display: none; }
+/* For debugging styles */
+
+}
+
+

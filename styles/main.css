@@ -1,59 +1,102 @@
+:root {
+    --dark-purple: #504B84;
+    --light-purple: #8B84EE;
+    --white: #F3ECFF;
+    --green: #00C898;
+
+    --primary-color: var(--dark-purple);
+    --secondary-color: var(--white);
+    --tertiary-color: var(--light-purple);
+    --accent-color: var(--green)
+}
+
+.bg-primary {
+    color: var(--primary-color);
+}
+
+.bg-secondary {
+    color: var(--secondary-color);
+}
+
 * {
-    background-color: #EBECFB;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0px;
 }
 
-h1 {
-    margin: 0px;
+html {
+    font-size: 100%;
 }
 
-.purple {
-    color: #5E559A;
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-.pale-blue {
-    color: #A3B5E9;
+header {
+    margin: 1vw 0 0 1vw;
 }
 
-.background-white {
-    color: #EBECFB;
+#home-main-block {
+    float: left;
+    margin: 10vh 0 0 10vw;
+    width: 80vw;
 }
 
-.proj-card {
-    border: solid 1px gray;
-    border-radius: 16px;
-
+#home-title {
+    font-size: 5em;
 }
+#home-subtitle {
+    padding-right: 10%;
+    width: 35vw;
+    float: left;
+}
+
+#home-img {
+    width: 40%;
+    padding-right: 10%;
+    float: right;
+}
+
+#page-content a {
+    color: var(--accent-color);
+}
+
+.nav {
+    float: right;
+    width: 50%;
+    font-size: 1.2em;
+    color: var(--accent-color);
+}
+
+.nav-item > *, .nav-item > *:visited{
+    text-decoration: none;
+    color: inherit;
+    font-size: 2em;
+}
+
+.nav-item > *:hover {
+    text-decoration: none;
+    color: inherit;
+    filter: brightness(85%);
+}
+
 
 
 /* Phones */
 @media (min-width: 0px) and (max-width: 767px) {
     
-    /* For debugging styles */
-    .debug-phone { display: inline; }
-    .debug-tablet, .debug-desktop { display: none; }
-    /* For debugging styles */
 
 }
 
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 991px) { 
-    /* For debugging styles */
-    .debug-tablet { display: inline; }
-    .debug-phone, .debug-desktop { display: none; }
-    /* For debugging styles */
-
+    
 }
 
 
 /* Desktops */
 @media (min-width: 992px) { 
-/* For debugging styles */
-.debug-desktop { display: inline; }
-.debug-phone, .debug-tablet { display: none; }
-/* For debugging styles */
+
 
 }
 

@@ -33,26 +33,28 @@ body {
 
 header {
     margin: 1vw 0 0 1vw;
+    clear: both;
 }
 
 #home-main-block {
     float: left;
+    clear: right;
     margin: 10vh 0 0 10vw;
-    width: 80vw;
+    width: fit-content;
 }
 
 #home-title {
     font-size: 5em;
 }
+
 #home-subtitle {
-    padding-right: 10%;
-    width: 35vw;
+    width: 40vw;
     float: left;
 }
 
 #home-img {
-    width: 40%;
-    padding-right: 10%;
+    width: 35%;
+    margin: 10vh 10vw 0 0;
     float: right;
 }
 
@@ -62,7 +64,7 @@ header {
 
 .nav {
     float: right;
-    width: 50%;
+    width: 100%;
     font-size: 1.2em;
     color: var(--accent-color);
 }
